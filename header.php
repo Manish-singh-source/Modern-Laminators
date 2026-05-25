@@ -43,7 +43,7 @@ $ogImage = $ogImage ?? 'https://modernlaminatorsindia.com/img/logo2.png';
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
-<body>
+<body class="<?= isset($currentPage) ? 'page-' . htmlspecialchars($currentPage, ENT_QUOTES, 'UTF-8') : ''; ?>">
     <div class="preloader">
         <div class="loading-container">
             <div class="loading"></div>

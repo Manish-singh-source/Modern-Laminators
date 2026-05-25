@@ -65,6 +65,55 @@
 	--font-awesome-brands-family: "Font Awesome 7 Brands", "Font Awesome 6 Brands", "Font Awesome 5 Brands";
 }
 
+@media only screen and (min-width: 992px) and (max-width: 1536px) {
+	body.page-index .about-us-metal,
+	body.page-index .client-counter-section,
+	body.page-index .our-services,
+	body.page-index .why-choose-us,
+	body.page-index .our-projects,
+	body.page-index .our-awards,
+	body.page-index .our-blog {
+		padding: 70px 0 !important;
+	}
+}
+
+/* Keep footer "Get In Touch" aligned in zoomed desktop views */
+@media only screen and (min-width: 992px) and (max-width: 1399px) {
+	.footer-links-box {
+		display: grid;
+		grid-template-columns: minmax(150px, 1fr) minmax(150px, 1fr) minmax(220px, 1.35fr);
+		gap: 24px;
+		align-items: start;
+		margin-left: 0;
+	}
+
+	.footer-links,
+	.footer-contact-links {
+		max-width: 100%;
+	}
+}
+
+/* Slightly reduce homepage heading scale for 150% zoom-like desktop widths */
+@media only screen and (min-width: 992px) and (max-width: 1399px) {
+	.hero-content .section-title h1 {
+		font-size: clamp(30px, 3.2vw, 46px);
+		line-height: 1.12;
+	}
+
+	.page-header-box h1 {
+		font-size: clamp(34px, 3.5vw, 48px);
+		line-height: 1.14;
+	}
+
+	.section-title h2 {
+		font-size: 35px;
+	}
+
+	.section-title h3 {
+		font-size: clamp(13px, 0.95vw, 15px);
+	}
+}
+
 /* Fallback font sources when the bundled webfonts directory is unavailable. */
 @font-face {
 	font-family: 'Font Awesome 7 Brands';
@@ -926,7 +975,7 @@ header.main-header .header-sticky.active {
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
-	padding: 290px 0 190px;
+	padding: clamp(170px, 20vh, 290px) 0 clamp(90px, 14vh, 190px);
 }
 
 .hero::before {
@@ -6335,10 +6384,10 @@ header.main-header .header-sticky.active {
 	}
 
 	.hero-slider .swiper-slide {
-		height: 600px;
+		height: 650px;
 	}
 	.hero {
-		height: 600px;
+		height: 650px;
 }
 
 	.hero-content .section-title h3 {
@@ -12063,25 +12112,29 @@ header.main-header .header-sticky.active {
 
 .infrastructure-page-header .page-header-box {
 	max-width: 940px;
-	margin: 0;
-	text-align: left;
+	margin: 0 auto;
+	text-align: center;
 }
 
 .infrastructure-page-header .page-header-box h1 {
 	max-width: 860px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .infrastructure-page-header .page-header-box p {
 	max-width: 760px;
+	margin-left: auto;
+	margin-right: auto;
 	color: rgba(255, 255, 255, 0.88);
 }
 
 .infrastructure-page-header .about-banner-points {
-	justify-content: flex-start;
+	justify-content: center;
 }
 
 .infrastructure-page-header .page-header-box ol {
-	justify-content: flex-start;
+	justify-content: center;
 }
 
 .infrastructure-overview-section,
@@ -12493,8 +12546,8 @@ header.main-header .header-sticky.active {
 
 .investor-page-header .page-header-box {
 	max-width: 960px;
-	margin: 0;
-	text-align: left;
+	margin: 0 auto;
+	text-align: center;
 }
 
 .investor-page-header .page-header-box h1 {
@@ -12503,7 +12556,7 @@ header.main-header .header-sticky.active {
 
 .investor-page-header .page-header-box p {
 	max-width: 790px;
-	margin: 0 0 24px;
+	margin: 0 auto 24px;
 	color: rgba(255, 255, 255, 0.92);
 	font-size: 19px;
 	line-height: 1.6;
@@ -12512,7 +12565,7 @@ header.main-header .header-sticky.active {
 
 .investor-page-header .about-banner-points,
 .investor-page-header .page-header-box ol {
-	justify-content: flex-start;
+	justify-content: center;
 }
 
 .investor-main-section {
@@ -12808,13 +12861,24 @@ header.main-header .header-sticky.active {
 
 .contact-page-header .page-header-box {
 	max-width: 940px;
-	margin: 0;
-	text-align: left;
+	margin: 0 auto;
+	text-align: center;
 }
 
 .contact-page-header .about-banner-points,
 .contact-page-header .page-header-box ol {
-	justify-content: flex-start;
+	justify-content: center;
+}
+
+.contact-page-header .page-header-box p {
+	max-width: 790px;
+	margin: 0 auto 24px;
+	color: rgba(255, 255, 255, 0.92);
+	font-size: 19px;
+	line-height: 1.6;
+	text-shadow: 0 4px 18px rgba(0, 0, 0, 0.65);
+	visibility: visible !important;
+	opacity: 1 !important;
 }
 
 .contact-address-section {
@@ -13808,4 +13872,207 @@ header.main-header .header-sticky.active {
 		min-height: auto;
 		padding: 28px;
 	}
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1399px) {
+	.section-title h2 {
+		font-size: 35px !important;
+	}
+
+	.about-us-body-metal,
+	.about-us-list-metal {
+		padding-bottom: 30px;
+		margin-bottom: 0;
+	}
+
+	.footer-links-box {
+		display: grid !important;
+		grid-template-columns: minmax(130px, 0.85fr) minmax(210px, 1.15fr) minmax(260px, 1.35fr) !important;
+		gap: 22px !important;
+		align-items: start;
+		margin-left: 0 !important;
+	}
+
+	.footer-links,
+	.footer-contact-links {
+		max-width: none !important;
+		min-width: 0;
+	}
+
+	.footer-contact-links {
+		grid-column: auto !important;
+	}
+	.main-footer {
+		position: relative;
+		padding: 70px 0 0;
+	}
+
+	.about-page-header,
+	.solutions-page-header,
+	.infrastructure-page-header,
+	.investor-page-header,
+	.contact-page-header {
+		padding: 175px 0 60px !important;
+		background-position: center center;
+	}
+
+	.about-page-header .page-header-box,
+	.solutions-page-header .page-header-box,
+	.infrastructure-page-header .page-header-box,
+	.investor-page-header .page-header-box,
+	.contact-page-header .page-header-box {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		max-width: 880px !important;
+		margin: 0 auto !important;
+		text-align: center !important;
+	}
+
+	.about-page-header .page-header-box h1,
+	.solutions-page-header .page-header-box h1,
+	.infrastructure-page-header .page-header-box h1,
+	.investor-page-header .page-header-box h1,
+	.contact-page-header .page-header-box h1 {
+		max-width: 760px;
+		font-size: 42px !important;
+		line-height: 1.1;
+		margin-bottom: 8px;
+	}
+
+	.about-page-header .page-header-box p,
+	.solutions-page-header .page-header-box p,
+	.infrastructure-page-header .page-header-box p,
+	.investor-page-header .page-header-box p,
+	.contact-page-header .page-header-box p {
+		max-width: 760px;
+		font-size: 16px;
+		line-height: 1.45;
+		margin-bottom: 14px;
+	}
+
+	.about-banner-tag {
+		align-self: center;
+		margin-bottom: 10px;
+		padding: 7px 16px;
+		font-size: 12px;
+	}
+
+	.about-banner-points {
+		gap: 8px;
+		justify-content: center !important;
+		margin-bottom: 0;
+	}
+
+	.about-banner-points span {
+		min-height: 34px;
+		padding: 7px 18px;
+		font-size: 12px;
+	}
+	.about-page-showcase {
+    padding: 70px 0;
+}
+.about-page-quality-card p {
+    font-size: 16px;
+}
+.our-services {
+    padding: 70px 0;
+}
+.our-team {
+    padding: 70px 0;
+}
+	.solutions-intro-section {
+    padding: 70px 0;
+}
+.solutions-category-section {
+    padding: 70px 0;
+}
+.solutions-quality-section {
+    padding: 70px 0;
+}
+.packaging-glance-section {
+    padding: 70px 0;
+}
+.infrastructure-overview-section, .infrastructure-process-section, .infrastructure-capability-section, .infrastructure-contact-section {
+    padding: 70px 0;
+}
+.infrastructure-film-section {
+    padding: 70px 0;
+}
+.infrastructure-overview-section, .infrastructure-process-section, .infrastructure-capability-section, .infrastructure-contact-section {
+    padding: 70px 0;
+}
+.infrastructure-overview-section, .infrastructure-process-section, .infrastructure-capability-section, .infrastructure-contact-section {
+
+    padding: 70px 0;
+}
+.infrastructure-quality-section {
+    padding: 70px 0;
+}
+.cta-box {
+    padding: 70px 0;
+}
+.investor-main-section,
+.investor-facts-section,
+.investor-documents-section {
+	padding: 70px 0 !important;
+}
+.investor-contact-strip {
+	padding-bottom: 70px !important;
+}
+.page-contact-us {
+	padding: 70px 0 35px !important;
+}
+.contact-address-section,
+.google-map {
+	padding: 70px 0 !important;
+}
+}
+
+@media only screen and (min-width: 1400px) and (max-width: 1536px) {
+	.about-page-header,
+	.solutions-page-header,
+	.infrastructure-page-header,
+	.investor-page-header,
+	.contact-page-header {
+		padding: 175px 0 90px !important;
+	}
+
+	.about-page-header .page-header-box p,
+	.solutions-page-header .page-header-box p,
+	.infrastructure-page-header .page-header-box p,
+	.investor-page-header .page-header-box p,
+	.contact-page-header .page-header-box p {
+		margin-bottom: 16px;
+	}
+
+	.about-banner-tag {
+		margin-bottom: 12px;
+	}
+
+	.about-banner-points {
+		margin-bottom: 0;
+	}
+
+	.investor-main-section,
+	.investor-facts-section,
+	.investor-documents-section {
+		padding: 70px 0 !important;
+	}
+
+	.investor-contact-strip {
+		padding-bottom: 70px !important;
+	}
+
+	.page-contact-us {
+		padding: 70px 0 35px !important;
+	}
+
+	.contact-address-section,
+	.google-map {
+		padding: 70px 0 !important;
+	}
+
+
 }
