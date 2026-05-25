@@ -5742,7 +5742,7 @@ header.main-header .header-sticky.active {
 
 	.our-services {
 		background-size: 300px auto;
-		padding: 50px 0;
+		padding: 15px 0;
 	}
 
 	.service-item {
@@ -6315,6 +6315,15 @@ header.main-header .header-sticky.active {
 
 	.topbar-contact-info ul {
 		justify-content: center;
+		flex-wrap: nowrap;
+		gap: 8px;
+		overflow-x: auto;
+		white-space: nowrap;
+	}
+
+	.topbar-contact-info ul li {
+		font-size: 12px;
+		white-space: nowrap;
 	}
 
 	.topbar-social-links {
@@ -6324,6 +6333,13 @@ header.main-header .header-sticky.active {
 	.hero {
 		padding: 140px 0 50px;
 	}
+
+	.hero-slider .swiper-slide {
+		height: 600px;
+	}
+	.hero {
+		height: 600px;
+}
 
 	.hero-content .section-title h3 {
 		font-size: 14px;
@@ -13662,6 +13678,19 @@ header.main-header .header-sticky.active {
 }
 
 @media only screen and (max-width: 767px) {
+	.page-header,
+	.about-page-header,
+	.solutions-page-header,
+	.infrastructure-page-header,
+	.investor-page-header,
+	.contact-page-header {
+		height: auto;
+		min-height: 340px;
+		background-size: cover;
+		background-position: center center;
+		background-repeat: no-repeat;
+	}
+
 	.infrastructure-page-header {
 		padding: 160px 0 90px;
 	}
