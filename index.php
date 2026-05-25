@@ -335,7 +335,7 @@ include __DIR__ . '/navbar.php';
 
                             <div class="service-item-body-content">
                                 <div class="service-item-content">
-                                    <h2><a href="#">Extrusion lamination</a></h2>
+                                    <h2><a href="#">Extrusion Lamination</a></h2>
                                     <p>Strong multi-layer structures designed for seal strength, barrier performance
                                         and stable machine handling.</p>
                                 </div>
