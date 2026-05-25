@@ -144,6 +144,7 @@ include __DIR__ . '/navbar.php';
             <div class="hero-slider-button-prev"><i class="fa-solid fa-arrow-left"></i></div>
             <div class="hero-slider-button-next"><i class="fa-solid fa-arrow-right"></i></div>
         </div>
+        <div class="hero-slider-pagination"></div>
     </div>
     <!-- Hero Section End -->
 

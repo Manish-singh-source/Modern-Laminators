@@ -48,6 +48,7 @@
 			const swiperEl = $slider.find('.swiper')[0];
 			const nextEl = $slider.find('.hero-slider-button-next')[0];
 			const prevEl = $slider.find('.hero-slider-button-prev')[0];
+			const paginationEl = $slider.find('.hero-slider-pagination')[0];
 
 			new Swiper(swiperEl, {
 				slidesPerView: 1,
@@ -61,6 +62,13 @@
 				navigation: {
 					nextEl: nextEl,
 					prevEl: prevEl,
+				},
+				pagination: {
+					el: paginationEl,
+					clickable: true,
+					renderBullet: function (index, className) {
+						return '<span class="' + className + '" aria-label="Go to banner ' + (index + 1) + '"></span>';
+					},
 				},
 			});
 		});

@@ -196,6 +196,19 @@
 	.hero-slider-nav {
 		display: none;
 	}
+
+	.hero-slider-pagination {
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 22px;
+		z-index: 11;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 8px;
+		pointer-events: auto;
+	}
 }
 
 /************************************/
@@ -1071,6 +1084,28 @@ header.main-header .header-sticky.active {
 .hero-slider-button-prev.swiper-button-disabled,
 .hero-slider-button-next.swiper-button-disabled {
 	opacity: 0.4;
+}
+
+.hero-slider-pagination {
+	display: none;
+}
+
+.hero-slider-pagination .swiper-pagination-bullet {
+	width: 12px;
+	height: 12px;
+	background: #ffffff;
+	border: 2px solid rgba(255, 255, 255, 0.95);
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.45);
+	cursor: pointer;
+	opacity: 1;
+	transition: all 0.3s ease-in-out;
+}
+
+.hero-slider-pagination .swiper-pagination-bullet-active {
+	width: 30px;
+	border-radius: 999px;
+	background: #d2231a;
+	border-color: #ffffff;
 }
 
 .hero-slider .wow,
@@ -14075,4 +14110,16 @@ header.main-header .header-sticky.active {
 	}
 
 
+}
+
+.hero::before,
+.page-header::before,
+.about-page-header::before,
+.solutions-page-header::before,
+.infrastructure-page-header::before,
+.investor-page-header::before,
+.contact-page-header::before {
+	background:
+		linear-gradient(90deg, rgba(2, 12, 24, 0.86) 0%, rgba(2, 12, 24, 0.78) 50%, rgba(2, 12, 24, 0.74) 100%) !important;
+	opacity: 1 !important;
 }
